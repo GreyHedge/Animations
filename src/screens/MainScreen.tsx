@@ -8,6 +8,10 @@ export const MainScreen: React.FC<RootStackScreenProps<EScreens.MAIN_SCREEN>> =
       navigation.navigate(EScreens.FLATLIST_SCROLL_ANIMATION_SCREEN);
     }, [navigation]);
 
+    const handleTwistCardPress = useCallback(() => {
+      navigation.navigate(EScreens.TWIST_CARD_SCREEN);
+    }, [navigation]);
+
     return (
       <View style={styles.container}>
         <TouchableOpacity
@@ -16,6 +20,9 @@ export const MainScreen: React.FC<RootStackScreenProps<EScreens.MAIN_SCREEN>> =
           <Text style={styles.text}>
             {EScreensTitle.FLATLIST_SCROLL_ANIMATION_SCREEN}
           </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleTwistCardPress}>
+          <Text style={styles.text}>{EScreensTitle.TWIST_CARD_SCREEN}</Text>
         </TouchableOpacity>
       </View>
     );
