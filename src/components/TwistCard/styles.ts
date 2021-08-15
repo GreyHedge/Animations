@@ -7,9 +7,9 @@ export const styles = StyleSheet.create({
     width: width * 0.8,
     height: 200,
     borderRadius: 16,
-    textShadowOffset: {
-      width: -2,
-      height: -2,
+    shadowOffset: {
+      width: 0,
+      height: 0,
     },
     shadowOpacity: 0.3,
     shadowColor: 'black',

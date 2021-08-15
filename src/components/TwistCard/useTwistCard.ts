@@ -16,20 +16,31 @@ export const useTwistCard = (frontCardColor: string, backCardColor: string) => {
       backCardColor,
       backCardColor,
     ]);
+    const elevation = interpolate(
+      cardAngle.value,
+      [
+        START_CARD_ANGLE,
+        START_CARD_ANGLE + 0.05,
+        END_CARD_ANGLE - 0.05,
+        END_CARD_ANGLE,
+      ],
+      [5, 0, 0, 5],
+    );
     return {
+      elevation,
       backgroundColor: color,
       transform: [{rotateY: `${cardAngle.value}rad`}],
     };
   });
 
-  const animatedTextStyle = useAnimatedStyle(() => {
+  const animatedFrontSideStyle = useAnimatedStyle(() => {
     const opacity = interpolate(cardAngle.value, INPUT_RANGE, [1, 0, 0]);
     return {
       opacity,
     };
   });
 
-  const animatedTranslateStyle = useAnimatedStyle(() => {
+  const animatedBackSideStyle = useAnimatedStyle(() => {
     const opacity = interpolate(cardAngle.value, INPUT_RANGE, [0, 0, 1]);
     return {
       opacity,
@@ -45,8 +56,8 @@ export const useTwistCard = (frontCardColor: string, backCardColor: string) => {
 
   return {
     animatedCardStyle,
-    animatedTextStyle,
-    animatedTranslateStyle,
+    animatedFrontSideStyle,
+    animatedBackSideStyle,
     handleCardPress,
   };
 };

@@ -21,16 +21,16 @@ export const TwistCard: React.FC<IProps> = ({
 }) => {
   const {
     animatedCardStyle,
-    animatedTextStyle,
-    animatedTranslateStyle,
+    animatedFrontSideStyle,
+    animatedBackSideStyle,
     handleCardPress,
   } = useTwistCard(frontCardColor, backCardColor);
 
   return (
     <TouchableWithoutFeedback onPress={handleCardPress}>
       <Animated.View style={[styles.card, animatedCardStyle]}>
-        <CardSide text={text} style={animatedTextStyle} />
-        <CardSide text={translate} style={animatedTranslateStyle} />
+        <CardSide text={text} style={animatedFrontSideStyle} />
+        <CardSide text={translate} style={animatedBackSideStyle} />
       </Animated.View>
     </TouchableWithoutFeedback>
   );
