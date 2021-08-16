@@ -1,19 +1,14 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import {commonStyles, TWIST_CARD_HEIGHT} from '../../constants';
 
 const {width} = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   card: {
+    ...commonStyles.shadow,
     width: width * 0.8,
-    height: 200,
+    height: TWIST_CARD_HEIGHT,
     borderRadius: 16,
-    shadowOffset: {
-      width: 0,
-      height: 0,
-    },
-    shadowOpacity: 0.3,
-    shadowColor: 'black',
-    shadowRadius: 3,
   },
   textContainer: {
     ...StyleSheet.absoluteFillObject,
