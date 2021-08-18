@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import {EScreens, EScreensTitle, RootStackScreenProps} from '../navigation';
+import {EScreens, EScreensTitle, RootStackScreenProps} from '@navigation';
 
 export const MainScreen: React.FC<RootStackScreenProps<EScreens.MAIN_SCREEN>> =
   ({navigation}) => {

@@ -5,7 +5,7 @@ import {
   FlatListScrollAnimationScreen,
   TwistCardScreen,
   MainScreen,
-} from '../screens';
+} from '@screens';
 import {RootStackParamList, EScreens, EScreensTitle} from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();

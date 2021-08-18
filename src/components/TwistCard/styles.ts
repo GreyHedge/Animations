@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import {commonStyles, TWIST_CARD_HEIGHT} from '../../constants';
+import {commonStyles, TWIST_CARD_HEIGHT} from '@constants';
 
 const {width} = Dimensions.get('window');
 

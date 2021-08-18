@@ -6,15 +6,15 @@ import {
   ListRenderItemInfo,
   SafeAreaView,
 } from 'react-native';
-import {Swipable, TwistCard} from '../../components';
+import {Swipable, TwistCard} from '@components';
 import {EmptyList} from './EmptyList';
-import {EScreens, RootStackScreenProps} from '../../navigation';
+import {EScreens, RootStackScreenProps} from '@navigation';
 import {
   IWord,
   MAX_SWIPABLE_TWIST_CARD_TRANSLATE_Y,
   SWIPE_UP_TWIST_CARD_BREAKPOINT_Y,
   WORDS,
-} from '../../constants';
+} from '@constants';
 
 const keyExtractor = (item: IWord) => item.name;
 

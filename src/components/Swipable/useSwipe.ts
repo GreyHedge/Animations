@@ -10,7 +10,7 @@ import {
   withTiming,
   withDelay,
 } from 'react-native-reanimated';
-import {SWIPE_ANIMATION_CONFIG} from '../../constants';
+import {SWIPE_ANIMATION_CONFIG} from '@constants';
 import {ISwipeProps} from './Swipable';
 
 const {width} = Dimensions.get('window');

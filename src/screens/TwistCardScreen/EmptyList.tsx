@@ -7,9 +7,9 @@ import {
   Dimensions,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {commonStyles} from '../../constants';
-import {EScreens, RootStackNavigationProp} from '../../navigation';
-import {Scalable} from '../../components';
+import {commonStyles} from '@constants';
+import {EScreens, RootStackNavigationProp} from '@navigation';
+import {Scalable} from '@components';
 
 const {width} = Dimensions.get('window');
 

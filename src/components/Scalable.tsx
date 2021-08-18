@@ -4,7 +4,7 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
-import {SCALE_ANIMATION_CONFIG} from '../constants';
+import {SCALE_ANIMATION_CONFIG} from '@constants';
 
 export const Scalable: React.FC<PropsWithChildren<{}>> = ({children}) => {
   const scale = useSharedValue(0);

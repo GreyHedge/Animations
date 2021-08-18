@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from 'react-native';
 import faker from 'faker';
-import {EScreens, RootStackScreenProps} from '../navigation';
+import {EScreens, RootStackScreenProps} from '@navigation';
 
 const {width} = Dimensions.get('window');
 
